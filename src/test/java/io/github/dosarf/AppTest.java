@@ -1,4 +1,4 @@
-package dosarf.github.io;
+package io.github.dosarf;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
