@@ -1,4 +1,4 @@
-package io.github.dosarf;
+package io.github.dosarf.jsr363;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static tec.units.ri.unit.MetricPrefix.CENTI;
