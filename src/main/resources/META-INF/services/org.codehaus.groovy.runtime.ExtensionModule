@@ -1,0 +1,3 @@
+moduleName=io.github.dosarf.metricgroovy.core
+moduleVersion=1.0-SNAPSHOT
+extensionClasses=io.github.dosarf.metricgroovy.core.impl.script.EvaluatorExtension

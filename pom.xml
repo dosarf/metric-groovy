@@ -9,6 +9,7 @@
 	<url>https://github.com/dosarf/metric-groovy</url>
 	<build>
 		<plugins>
+		    <!-- Based on https://github.com/groovy/GMavenPlus/wiki/Usage -->
 			<plugin>
 				<groupId>org.codehaus.gmavenplus</groupId>
 				<artifactId>gmavenplus-plugin</artifactId>
@@ -28,13 +29,12 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- 
 			<plugin>
-				< ! - - if including source jars, use the no-fork goals otherwise both the 
-					Groovy sources and Java stub sources will get included in your jar - - >
+				<!-- if including source jars, use the no-fork goals otherwise both the 
+					Groovy sources and Java stub sources will get included in your jar -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				< ! - - source plugin \> = 2.1 is required to use the no-fork goals - - >
+				<!-- source plugin \> = 2.1 is required to use the no-fork goals -->
 				<version>3.0.1</version>
 				<executions>
 					<execution>
@@ -46,7 +46,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -69,9 +68,9 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>javax.measure</groupId>
-			<artifactId>unit-api</artifactId>
-			<version>1.0</version>
+			<groupId>org.jscience</groupId>
+			<artifactId>jscience</artifactId>
+			<version>4.3.1</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
@@ -81,9 +80,9 @@
 			<version>2.4.13</version>
 		</dependency>
 		<dependency>
-			<groupId>tec.units</groupId>
-			<artifactId>unit-ri</artifactId>
-			<version>1.0.3</version>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>23.6-jre</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
@@ -104,5 +103,19 @@
 			<version>1.10.19</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- 
+		<dependency>
+			<groupId>javax.measure</groupId>
+			<artifactId>unit-api</artifactId>
+			<version>1.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>tec.units</groupId>
+			<artifactId>unit-ri</artifactId>
+			<version>1.0.3</version>
+			<scope>test</scope>
+		</dependency>
+		 -->
 	</dependencies>
 </project>
